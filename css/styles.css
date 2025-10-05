@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6, p {
 
   display: inline-block;
  
-  margin-right: 76px
+  
 
 }
 
@@ -383,9 +383,14 @@ background: #f4f4fd;
 }
 .section-solutions {
 
-  padding: 96px 16px;
+  padding: 96px 0px;
   
 }
+
+
+
+
+
 
 .solutions {
   
@@ -417,18 +422,7 @@ background: #f4f4fd;
 }
 
 
-.section-team {
 
-  background: #f4f4fd;
-  padding-top: 96px;
-  padding-bottom: 96px;
-  width: 100%;
-
-
-
-
-
-}
 .solution-icons{
    /* display: flex;
   align-items: center;
@@ -498,9 +492,7 @@ background: #f4f4fd;
   margin: 0 auto;
 }
 
-.section-team {
-  padding-top: 120px;
-}
+
 
 
 
@@ -537,6 +529,9 @@ background: #f4f4fd;
 
 
 }
+.mobile-adr-nav{
+  margin-bottom: 48px;
+}
 
 .team-icons{
   list-style-type: none; 
@@ -544,6 +539,19 @@ background: #f4f4fd;
   padding: 0;
   display: flex;
   justify-content: center;
+  gap: 24px; 
+ 
+  
+  
+  
+  
+}
+.team-icons-menu{
+  list-style-type: none; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  
   gap: 24px; 
  
   
@@ -748,7 +756,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* max-width: 264px; */
   /* width: 100%; */
   width: 288px;
-  margin-bottom: 16px;
+  
 
 
 
@@ -765,7 +773,6 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 /* 
   display: inline-block;  */
   margin-bottom: 16px;
-  padding-left: 86px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -843,8 +850,7 @@ justify-content: center;
 
 }
 .socialnii{
-  /* margin-right: 80px; */
-  width: 100%;
+  
   margin-top:72px ;
   
 }
@@ -1264,7 +1270,21 @@ min-width: 231px;
 
 
 @media screen and (min-width:768px) {
+  .section-team {
 
+  background: #f4f4fd;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  width: 100%;
+
+
+
+
+
+}
+.title-web{
+  margin-right: 120px;
+}
   .section-start{
     
 
@@ -1350,6 +1370,7 @@ min-width: 231px;
 
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     gap: 12px;
     padding: 0;
@@ -1357,7 +1378,7 @@ min-width: 231px;
       line-height: 14px;
     }
 
-    margin-left: 121px;
+   
   }
 
   .header-container{
@@ -1372,11 +1393,11 @@ min-width: 231px;
   justify-content: center;
 }
 .portfolio{
-  padding: 96px 16px ;
+  padding: 96px 0 ;
   
 }
 .con-sol{
-  padding:0 ;
+  padding:0 16px;
 }
 .con-secr{
   padding: 0 16px;
@@ -1404,14 +1425,27 @@ min-width: 231px;
   display: none;
 }
 .footer-container{
-  width: 100%;
-  margin: 0;
+  width: 584px;
+  margin: 0 auto;
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
+  }
+  .social-m{
+    justify-content: flex-start;
+  }
+  .par-sub{
+    justify-content: flex-start;
+  }
+  .sub-button{
+    margin-top: 0;
+  }
+  .ftr{
+    justify-content: flex-start;
   }
 
+  
   .logonp{
     margin: 0;
 
@@ -1454,8 +1488,15 @@ min-width: 231px;
 
 
 @media screen and (min-width:1158px) {
+  .section-solutions, .portfolio, .section-team{
+    padding: 120px 0;
+  }
+  .title-web{
+    margin-right: 76px;
+  }
   
 .adress-list-flex{
+  flex-direction: row;
 gap: 40px;
   }
 .adress-item{
@@ -1468,6 +1509,18 @@ gap: 40px;
 }
 .section-solutions, .section-team, .portfolio{
   padding: 120px auto 120px auto;
+}
+.section-team {
+
+  background: #f4f4fd;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  width: 100%;
+
+
+
+
+
 }
 .solution-icons{
   display: flex;
@@ -1517,12 +1570,10 @@ gap: 40px;
     margin: 0px auto;
     padding: 0 15px;
 }
-.logonp{
-  margin-right: 120px;
-}
+
 .socialnii{
-  /* margin-right: 80px; */
-  width: 208px;
+   margin-right: 80px; 
+ 
   
   
 }
@@ -1555,6 +1606,16 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
 margin-top: 8px;
+}
+.adress-item{
+  font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-size: 16px;
+
+/* line-height: 24px; */ 
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #434455;
 }
   
 
@@ -1653,10 +1714,7 @@ margin-top: 8px;
         
         margin-bottom: 40px;
     }
-       .mobile-nav-menu{
-        margin-bottom: 168px;
-
-       }     
+        
 }
 
 .zsd{
@@ -1711,10 +1769,9 @@ color: #4d5ae5;
 color: #404bbf;
 }
 
-.mobile-nav-menu{
-  padding-top: 46px;
-  padding-left: 16px;
-}
+
+
+
 
 /* ___________________________ ___________ */
 
