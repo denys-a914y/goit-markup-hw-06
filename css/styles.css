@@ -1235,6 +1235,22 @@ min-width: 231px;
 
 /* -----media------ */
 @media screen and (max-width: 767px) {
+      .mobile-nav-menu {
+        margin-bottom: 168px;
+    }
+
+  .team-icons-menu{
+  
+  position: absolute;
+  bottom: 40px;
+  left: 16px;
+
+
+
+
+        
+
+}
     .modal {
         width: 90%;
         min-width: auto;
@@ -1253,7 +1269,7 @@ min-width: 231px;
     .menu-open-svg {
         fill: #2F2F37;
     }
-
+    
 
 
 
