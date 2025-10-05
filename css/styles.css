@@ -268,16 +268,31 @@ nav {
 .section-start {
  
   padding: 72px 0;
-  background-image: 
-    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url("../images/studio-people.jpg");
+
+    
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* max-width: 1440px; */
-  max-width: 320px;
  
   margin: 0 auto;
+  max-width: 1440px;
+
+  
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/img2x(squ)/Dark-bg1X.jpg");
+
+  @media (min-resolution: 2x) {
+    
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/img2x(squ)/Dark-bg2X.jpg");
+    
+  }
 
 }
 
@@ -1249,6 +1264,32 @@ min-width: 231px;
 
 
 @media screen and (min-width:768px) {
+
+  .section-start{
+    
+
+  
+
+   background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/img2x(squ)/Dark-bg-tab1X.jpg");
+  
+
+  @media (min-resolution: 2x) {
+    
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/img2x(squ)/Dark-bg-tab2X.jpg");
+    
+  }
+}
+
+
+
   .email-sub{
     width: 264px;
   }
@@ -1414,10 +1455,9 @@ min-width: 231px;
 
 @media screen and (min-width:1158px) {
   
-  .logonp{
-
-  margin-right: 120px;
-}
+.adress-list-flex{
+gap: 40px;
+  }
 .adress-item{
   font-size: 16px;
 }
@@ -1436,7 +1476,7 @@ min-width: 231px;
   
 
 
-  
+
 
 }
 .solution-item{
@@ -1466,6 +1506,84 @@ min-width: 231px;
     margin: 0px auto;
     padding: 0 15px;
 }
+
+.fotter-container{
+  display: flex;
+    align-items: baseline;
+    margin: 0 auto;
+}
+.container{
+  width: 1158px;
+    margin: 0px auto;
+    padding: 0 15px;
+}
+.logonp{
+  margin-right: 120px;
+}
+.socialnii{
+  /* margin-right: 80px; */
+  width: 208px;
+  
+  
+}
+.social-m{
+  display: block;
+}
+.ftr{
+padding-left: 0;
+    display: block;
+  }
+.subscribe{
+  margin-top: 0;
+}
+.par-sub{
+  display: block;
+}
+.footer-form{
+  align-items: normal;
+}
+.sub-button{
+  margin-top: 0;
+}
+.solution-item-title{
+  font-family: "Roboto", sans-serif;
+font-weight: 500;
+font-size: 20px;
+
+/* line-height: 24px; */ 
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: #2e2f42;
+margin-top: 8px;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
